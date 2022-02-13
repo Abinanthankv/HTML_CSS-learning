@@ -1,25 +1,42 @@
-header{
-	display: flex;
-	justify-content: safe center;
-	color:black;
-	font-size: 40px;text-align: center;
-	padding:  50px ;
-	margin: 0px;
-	background: turquoise;
-	
-}
-#Profile{
-	color:black;
-	font-size: 20px;
 
+body{
+ 
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+ 
+  color:#666;
+ 
 }
-.column{
-	display: flex;
-	color: pink;
-	justify-content:space-evenly;
-	background: gray;
-	margin: 2px 200px 1px 1px;
+.center{
+position:absolute;
+top: 40%;
+left: 40%;
+  
+  padding: 25px;
+  background: gray;
+  text-align:center;
+  color:ghostwhite;
+  font-size:30px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  
 }
-<*body{
-	background:burlywood;
-}*>
+.container{
+	display:grid;
+	grid-gap: 10px 10px;
+	padding: 5px;	
+}
+
+
+
+p{
+	text-align: center;
+	font-size: 27px;
+}
+
+
+
+
+
