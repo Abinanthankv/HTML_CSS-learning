@@ -10,9 +10,7 @@ body{
  
 }
 .center{
-position:absolute;
-top: 40%;
-left: 40%;
+
   
   padding: 25px;
   background: gray;
@@ -22,9 +20,6 @@ left: 40%;
   letter-spacing:8px;
   text-transform:uppercase;
   
-}button{
-  background: hotpink;
-  color: blue;
 }
 .container{
 	display:grid;
