@@ -32,8 +32,8 @@ body{
  left: 30%;
   text-align: center;
   padding: 25px;
-  background: gray;
-  color:ghostwhite;
+  background:transparent;
+  color:black;
   font-size:30px;
   letter-spacing:8px;
   transform: translate(-50%,-50%);
