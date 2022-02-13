@@ -11,10 +11,11 @@ body{
 }
 .center{
 
-  
+  position: absolute;
+  top: 40%;
+  left: 40%;
   padding: 25px;
   background: gray;
-  text-align:center;
   color:ghostwhite;
   font-size:30px;
   letter-spacing:8px;
