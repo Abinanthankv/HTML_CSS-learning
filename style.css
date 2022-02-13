@@ -31,7 +31,7 @@ body{
 }
 
 @media (min-width: 600px) {
-  .column {
+  .container {
     width: 50%;
   }
 }
