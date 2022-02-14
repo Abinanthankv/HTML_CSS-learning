@@ -82,23 +82,25 @@
   max-width: 700px;
 }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:320px){
   *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
   }
   .showcase{
-    position:relative;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    color: white;
+    display: none;
   }
+  
+  showcase header{
+    
+    
+    padding: 40px 10px;
+    z-index: 1000;
+    display: flex;
+    align-items:flex-start;
+    justify-content:start;
+
+}
+display:none;
 }
