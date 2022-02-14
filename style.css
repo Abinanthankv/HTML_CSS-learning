@@ -3,6 +3,15 @@ body{
   margin: 0;
   width: auto;
 }
+p{
+  position: absolute;
+  background: darkgrey;
+  padding: 10px;
+  top: 40%;
+  left: 10%;
+  color: white;
+  font-size: 20px;
+}
  
 
 
