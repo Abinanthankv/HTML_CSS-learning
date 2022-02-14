@@ -9,18 +9,39 @@
 <body>
 	<section class="showcase">
 		<header class="logo">
-			<h2>Farm2Home</h2>
-			<div></div>
+			<h2>Farm2Home</h2><h2></h2>
+			<h2></h2>
+			<a href="index.html" ><h6>Home</h6></a>
+			<a href="profile.html" ><h6>Products</h6></a>
+			<h6>contacts</h6>
 		</header>
-		<video src="videos1.mp4" muted loop autoplay></video>
-		
+				
+		<div>
+		<video class="mySlides" src="video6.mp4" muted loop autoplay></video>
+		<video class="mySlides" src="video3.mp4" muted loop autoplay></video>	
+		</div>
 		<div class=text>
 			<h2>Never Stop</h2>
 			<h3>Eating Healthy</h3>
-			<p>lorem20 kdf bfk djvbsdjksdjkdksjd jsdnsdksd kksdnsldvnlkvddkvnkvslvnskvsvnk nnkskkvsknvsvnkvvlksvv kdjsvvslvvsvvsbvvsddjvvsvbsvdivzv jdbkf</p>	
-		
+			<p>We are delivering the prodcuts straight from the farm </p>
+			<a href="profile.html">Explore the Products</a>
 		</div>	
 		<div class="overlay"></div>
-	</section>			
+	</section>	
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+  		var i;
+  		var x = document.getElementsByClassName("mySlides");
+  		for (i = 0; i < x.length; i++) {
+   			x[i].style.display = "none";  
+  		}
+  		myIndex++;
+  		if (myIndex > x.length) {myIndex = 1}    
+  			x[myIndex-1].style.display = "block";  
+  		setTimeout(carousel, 8000); // Change image every 2 seconds
+		}
+	</script>		
 </body>
 </html>
