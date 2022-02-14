@@ -93,10 +93,11 @@
   .showcase header{
     padding: 40px 10px;
     display: flex;
-    height: 100%vh;
+  
     flex-direction:row;
-    align-items: center;
+    align-items:center;
     justify-content:space-between;
+    justify-items: start;
 
 }
 .text{
@@ -104,5 +105,14 @@
   left: 0;
   top: 62%;
   z-index: 30;
+}
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 }
