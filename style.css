@@ -1,35 +1,70 @@
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
+*{
   margin: 0;
-  opacity: 0.85;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
   
 }
-.container{
+.showcase{
+ position: absolute;
+ right: 0;
+ width: 100%;
+ height: 100vh;
+ padding: 100px;
  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: black;
+ color: white;
 }
-.items1{
-  position: absolute;
-  top: 40%;
-  left: 0%;
-  background: transparent;
-  opacity: 0.8;
-  padding: 10px;
-  color: white;
-  font-size: 30px;
-}
-.items2{
-  position: absolute;
-  flex-wrap: wrap;
-  opacity: 0.8;
-  top: 50%;
-  left:0%;
-  background: transparent;
-  padding: 10px;
-  color: white;
-  font-size: 25px;
-}
- 
+.showcase header{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 40px 100px;
+ z-index: 1000;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
 
+}
+.logo{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.text{
+  position: relative;
+  z-index: 10;
+}
+.text h2{
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3{
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p{
+  font-size: 1.1em;
+  margin: 20px 0px;
+  font-weight: 400px;
+  max-width: 700px;
+}
 
 
 
