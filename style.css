@@ -6,6 +6,7 @@
   font-family: 'Poppins',sans-serif;
   
 }
+@media screen and (min-width:960px){
 .showcase{
  position: absolute;
  right: 0;
@@ -43,8 +44,6 @@
   border-style: solid;
 
 }
-
-
 .logo{
   text-transform: uppercase;
   cursor: pointer;
@@ -82,7 +81,7 @@
   font-weight: 400px;
   max-width: 700px;
 }
-
+}
 
 
 
