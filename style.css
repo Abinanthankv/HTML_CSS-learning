@@ -1,16 +1,32 @@
 
 body{
   margin: 0;
-  width: auto;
+  opacity: 0.85;
+  
 }
-p{
+.container{
+ display: flex;
+}
+.items1{
   position: absolute;
-  background: darkgrey;
-  padding: 10px;
   top: 40%;
-  left: 10%;
+  left: 0%;
+  background: transparent;
+  opacity: 0.8;
+  padding: 10px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+}
+.items2{
+  position: absolute;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  top: 50%;
+  left:0%;
+  background: transparent;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
 }
  
 
