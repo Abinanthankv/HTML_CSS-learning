@@ -82,7 +82,7 @@
   max-width: 700px;
 }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
   .showcase{
     background: black;
     display: none;
