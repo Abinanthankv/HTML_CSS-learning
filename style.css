@@ -1,34 +1,10 @@
 
 body{
   margin: 0;
-}
- header{
-  margin: 0;
-  width: 100%;
-  
- 
- }
-.container{
-  display: flex;
-  flex-wrap: wrap;
-}
-.container p{
-  flex: 5;
-border: 2px solid red;
-}
-.container img{
-
-  padding: 5px;
   width: auto;
-border: 2px solid red;
 }
-.center{
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: white;
-  background: transparent;
-}
+ 
+
 
 
 
