@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
 
-*{
+
+@media screen,(min-width: 2000px){
+  *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 }
-@media screen,(min-width: 2000px){
 .showcase{
- position: absolute;
- right: 0;
+ position:absolute;
  width: 100%;
- height: 100vh;
+ min-height:100%;
  padding: 100px;
  display: flex;
- justify-content: space-between;
- align-items: center;
+ justify-content:center;
+ align-items:center;
  background: black;
  color: white;
 }
 .showcase header{
  position: absolute;
  top: 0;
- left: 1%;
+ right:0;
  width: 100%;
  padding: 40px 100px;
  z-index: 1000;
@@ -33,6 +33,9 @@
 }
 .showcase a{
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Poppins',sans-serif;
   color: white;
 }
 .text a {
@@ -58,8 +61,12 @@
   opacity: 0.8;
 }
 .text{
+  display: flex;
+  left: 7%;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
   position: absolute;
-  top: 62%;
   z-index: 30;
 }
 .text h2{
@@ -86,6 +93,7 @@
   .showcase header{
     padding: 40px 10px;
     display: flex;
+    height: 100%vh;
     flex-direction:row;
     align-items: center;
     justify-content:space-between;
