@@ -24,50 +24,57 @@
  width: 100%;
  right: 0;
  padding: 40px 100px;
- 
  z-index: 1000;
  display: flex;
  align-items: center;
  justify-content:space-between;
 
 }
-.menu{
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content:space-between;
-  flex-direction: row;
+.login{
+    position: absolute;
+    top: 0;
+    right:0 ;
+    padding: 40px;    
+    z-index: 2;
+}
+#login{
+  padding:10px 20px ;
+  font-weight: 800px;
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: black;
+  background: yellow;
+}
+#signup{
+  padding:10px 10px ;
+  font-weight: 800px;
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: black;
+  background:cyan;
+}
+.login button{
+  padding: 7px;
+  color: white;
+  font-weight: 800px;
+  font-size: 17px;
+  background: transparent;
+ text-transform: uppercase;
+ border-radius: 20px;
+}
 
-}
-.showcase ul{
-    display: flex;
-  align-items: center;
-  justify-content:space-between;
-  flex-direction: row;
-}
-ul li{
-  list-style-type: none;
-
-}
 .showcase a{
   text-decoration: none;
+  padding: 10px;
   font-size: 20px;
-  border: 2px whitesmoke solid;
   font-weight: 400;
   font-family: 'Poppins',sans-serif;
   color: white;
 }
-
 .showcase a:hover{
-   border: 4px white solid;
+   border: 2px white solid;
 }
-.text a {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  border: 3px, darkgray, solid;
 
-}
 .logo{
   text-transform: uppercase;
   cursor: pointer;
@@ -91,6 +98,7 @@ ul li{
   position: absolute;
   z-index: 30;
 }
+
 .text h2{
 
   font-size: 3em;
