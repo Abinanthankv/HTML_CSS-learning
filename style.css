@@ -28,14 +28,14 @@
  display: flex;
  align-items: center;
  justify-content:space-between;
-
 }
-.login{
-    position: absolute;
-    top: 0;
-    right:0 ;
-    padding: 40px;    
-    z-index: 2;
+.login
+{
+  position: absolute;
+  top: 0;
+  right:0 ;
+  padding: 40px;    
+  z-index: 2;
 }
 #login{
   padding:10px 20px ;
@@ -53,14 +53,10 @@
   color: black;
   background:cyan;
 }
-.login button{
-  padding: 7px;
-  color: white;
-  font-weight: 800px;
-  font-size: 17px;
-  background: transparent;
- text-transform: uppercase;
- border-radius: 20px;
+ button{
+}
+#login:hover{
+  font-size: 40px;
 }
 
 .showcase a{
