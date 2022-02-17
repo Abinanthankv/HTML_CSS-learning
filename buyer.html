@@ -6,6 +6,9 @@
 	<title>Buyer</title>
 	<!-- Importing stylesheet-->
 		<link rel="stylesheet" type="text/css" href="buyer.css">
+		   <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
 </head>
 <body>
 	<header>
@@ -19,33 +22,34 @@
 		<div>
 			<h2>
 				Category
+				<hr>
 			</h2>
-			<p>
+			<p  onclick='showveg()'>
 				Veg
 			</p>
-				<p>
-				Non-veg fv  hfhfgb fgngnv gfv fbfgn
+			<p  onclick='shownonveg()'>
+				Non-veg
 			</p>
 		</div>
 		
 	</section>
 	<section class="container">
-		<div class="card">
+		<div  class="card veg">
 			<img src="/media/wall1.jpg">
-			<div class="content">
+			<div  class="content">
 				<h2>jhvbdjvb1</h2>
 			</div>
 			
 			
 		</div>
-		<div class="card">
+		<div class="card veg">
 			<img src="/media/wall2.jpg">
 			<div class="content">
 				<h2>jhvbdjvb2</h2>
 			</div>
 			
 		</div>
-		<div class="card">
+		<div class="card veg">
 			<img src="/media/tomato.jpg">
 			<div class="content">
 				<h2>jhvbdjvb3</h2>
@@ -53,30 +57,52 @@
 			
 			
 		</div>
-		<div class="card">
+		<div class="card non_veg">
 			<img src="/media/tomato.jpg">
 			<div class="content">
-				<h2>jhvbdjvb</h2>
+				<h2>jhvbdjvb4</h2>
 			</div>
 			
 		</div>
-		<div class="card">
+		<div class="card non_veg">
 			<img src="/media/tomato.jpg">
 			<div class="content">
-				<h2>jhvbdjvb</h2>
+				<h2>jhvbdjvb5</h2>
 			</div>
 			
 			
 		</div>
-		<div class="card">
+		<div class="card non_veg">
 			<img src="/media/tomato.jpg">
 			<div class="content">
-				<h2>jhvbdjvb</h2>
+				<h2>jhvbdjvb6</h2>
 			</div>
 			
 		</div>
 		
-	</section> >
-			
+	</section> 
+	 <script>
+	 	 let veglen=document.getElementsByClassName('veg').length
+	 	 let nonveglen=document.getElementsByClassName('non_veg').length
+      function showveg ()  {
+      
+       for (let i=0;i<nonveglen;i++)
+       {
+        const nonveg = document.getElementsByClassName('non_veg');
+        nonveg[i].style.display = 'none';
+       }
+    }
+        function shownonveg ()  {
+         for (let i=0;i<veglen;i++)
+       {	
+        const veg = document.getElementsByClassName('veg');
+        veg[i].style.display = 'none';
+        
+        }
+
+    }
+    </script>
+	
+  
 </body>
 </html>

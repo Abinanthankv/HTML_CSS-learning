@@ -17,18 +17,28 @@ header video{
   width: 100%;
 }
 .sidebar{
-
   height: 100%;
-  
-  background:pink;
+  width: 204px;
+  background:white;
+  color:black;
   position: absolute;
-  top: 204px;
+  top: 203px;
+  border: 5px solid grey;
   left: 0;
 }
+.sidebar p{
+  text-align: left;
+  margin: 5px 8px;
 
-.sidebar p {
-  min-width: 10px;
 }
+.veg{
+  
+}
+.nonveg{
+
+}
+
+
 
 .container{
   position: absolute;
@@ -36,7 +46,7 @@ header video{
   flex-wrap: wrap;
   left: 200px;
   justify-content:space-evenly;
-  background:white;
+  background:floralwhite;
 
 }
 .card{
@@ -64,6 +74,7 @@ header video{
 .content{
   color: white;
   display: block;
+  background: grey;
   z-index: 20;
   text-align: center;
  
