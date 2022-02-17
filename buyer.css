@@ -1,21 +1,62 @@
-.cards{
-display:grid;
-grid-template-columns: repeat(auto-fit, minmax(20px 1fr));
-color:black;
-gap: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Poppins',sans-serif;
+}
+header{
+  height: 200px;
+  margin-bottom: 5px;
+
+}
+header video{
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.sidebar{
+
+  height: 100%;
+  
+  background:pink;
+  position: absolute;
+  top: 204px;
+  left: 0;
+}
+
+.sidebar p {
+  min-width: 10px;
+}
+
+.container{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 200px;
+  justify-content:space-between;
+  background:white;
+
 }
 .card{
-  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background: grey;
+  margin:2px 5px;
+  
+  border: 2px solid white;
 }
-.item-details{
-  line-height: 1.5;
-  font-size: 0.9em;
-  padding: 15px;
-  background: grey;
+.card img{
+  display: block;
+  height:350px;
+  width: 350px;
 
 }
-
-img{
-  width: 20%;
+.content{
+  color: white;
+  z-index: 20;
+  text-align: center;
+  align-items: center;
 }
