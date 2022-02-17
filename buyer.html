@@ -90,6 +90,9 @@
        {
         const nonveg = document.getElementsByClassName('non_veg');
         nonveg[i].style.display = 'none';
+         const veg = document.getElementsByClassName('veg');
+        veg[i].style.display = '';
+        
        }
     }
         function shownonveg ()  {
@@ -97,7 +100,8 @@
        {	
         const veg = document.getElementsByClassName('veg');
         veg[i].style.display = 'none';
-        
+        const nonveg = document.getElementsByClassName('non_veg');
+        nonveg[i].style.display = '';
         }
 
     }
