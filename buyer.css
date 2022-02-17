@@ -1,0 +1,21 @@
+.cards{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(20px 1fr));
+color:black;
+gap: 20px;
+}
+.card{
+  width: 100%;
+  background: grey;
+}
+.item-details{
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: grey;
+
+}
+
+img{
+  width: 20%;
+}

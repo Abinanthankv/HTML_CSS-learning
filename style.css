@@ -72,6 +72,26 @@ a{
 
 }
 
+.cards{
+
+display:grid;
+grid-template-columns: repeat(auto-fill, minmax(220px 1fr));
+color:black;
+gap: 20px;
+width: 100%;
+}
+.card{
+  background: grey;
+}
+.item-details{
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: grey;
+
+}
+
+
 
 
 
