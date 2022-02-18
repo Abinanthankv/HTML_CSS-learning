@@ -6,26 +6,58 @@
 	<title>Farm2Home</title>
 	<!-- Importing stylesheet-->
 		<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-	
-	<section class="showcase">
-	<header class="logo">
-		<h2>Farm2Home</h2>	
+	<header onscroll="showheader()"  class="header1">
+		<h2>Farm2Home</h2>
+		<div class="menu">
+			<i class="material-icons">account_circle</i>
+		</div>
 	</header>
-	<video src="media/video6.mp4" muted loop autoplay></video>
-	<div class=text>
-			<h2>Never Stop</h2>
-			<h3>Eating Healthy</h3>
-			<p>We are delivering the products straight from the farm </p>
-			<a href="buyer.html">Explore the Products--></a>
-		</div>	
-	
+	<section class="banner">
+		<img src="media/wall1.jpg">
 		
 	</section>
+	<section class="container1">
+		<div>
+			<p>
+			vjfnvlksdvnd
+			gdff
+			gd
+			sf
+			gdf
+		
+		</p>
+		</div>
+		
+	</section>
+<script>
+	let scrollbefore=0;
+     header = document.getElementsByClassName('header1');
+	window.addEventListener('scroll',()=>{
+		const scrollable=document.documentElement.scrollHeight -window.innerHeight;
+		let currentpos=window.scrollY;
+				if (currentpos>scrollbefore)
+				{
+            	header[0].style.top="-80px";		
+				}
+				else{
+            	header[0].style.top="0";	
+				}
+		scrollbefore=currentpos;
+        
+		if (scrollable==currentpos) {
+			alert("you reached the bottom")
+		} 
+		
 	
+	});
+</script>
 	
 </body>
+
 </html>
 
 
