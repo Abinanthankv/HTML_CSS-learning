@@ -4,18 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+ 
   font-family: 'Poppins',sans-serif;
 }
 header{
-  height: 200px;
-  margin-bottom: 5px;
+  height: 150px;
+}
+header div{
+  position: absolute;
+  right: 0;
 
 }
-header video{
-  object-fit: cover;
-  height: 200px;
-  width: 100%;
-}
+
+
 .sidebar{
   height: 100%;
   width: 204px;

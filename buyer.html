@@ -6,16 +6,19 @@
 	<title>Buyer</title>
 	<!-- Importing stylesheet-->
 		<link rel="stylesheet" type="text/css" href="buyer.css">
-		   <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 	<header>
-		<div>
-			<h2>
-				<video src="media/video6.mp4" muted autoplay>
-			</h2>
+		<div >
+			<h3>
+	<i onclick="opencart()" class="material-icons">
+shopping_cart_checkout
+</i>
+	<i onclick="openprofile()"class="material-icons">account_circle</i>
+
+		</h3>
 		</div>
 	</header>
 	<section class="sidebar">
@@ -34,10 +37,14 @@
 		
 	</section>
 	<section class="container">
-		<div  class="card veg">
+		<div id="item1" class="card veg">
 			<img src="media/wall1.jpg">
 			<div  class="content">
-				<h2>veg1</h2>
+				<h2>1kg $20</h2>
+
+			</div>
+			<div>
+				<i id="item1" onclick="addtocart(id)" class="material-icons">shopping_cart_checkout</i>
 			</div>
 			
 			
@@ -82,6 +89,7 @@
 		
 	</section> 
 	 <script>
+	 	let cartitems=0;
 	 	 let veglen=document.getElementsByClassName('veg').length
 	 	 let nonveglen=document.getElementsByClassName('non_veg').length
       function showveg ()  {
@@ -104,6 +112,18 @@
         nonveg[i].style.display = '';
         }
 
+    }
+    function openprofile(){
+    	    window.open(
+              "profile.html").focus();
+    }
+    function opencart(){
+    	    window.open(
+              "index.html").focus();
+    }
+    function addtocart(id){
+    	    let cartitems=document.getElementById(id);
+    	    alert(cartitems);
     }
     </script>
 	
