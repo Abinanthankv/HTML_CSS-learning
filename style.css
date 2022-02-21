@@ -18,27 +18,18 @@ header{
   right: 0;
   padding: 5px;
 }
-a:hover{
-  padding: 8px;
-  border-radius: 10px 0px 12px 0px;
-  animation-name:menuhover ;
-  animation-duration:1s;
+header ul li a:hover,
+header ul li a.active:focus{
+  border: 2px solid white;
+  border-radius: 20px;
+  background: white;
+  color: black;
 }
-.selected:focus{
 
-  border: 3px solid white ;
-  border-color: black black white black;
-  padding: 8px;
-  color:white;
-}
-@keyframes menuhover{
-
-  100%{ background:white; color:black; }
-}
 .menuitems {
  display: flex;
  justify-content: space-between;
-  
+ 
 }
 .menuitems li{
   margin: 2px 30px;
@@ -47,6 +38,8 @@ a:hover{
 }
 a{
   text-decoration: none; 
+  
+  padding: 6px 15px;
 
 }
 
