@@ -3,60 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width ,initial-scale=1.0" >
-	<title>Farm2Home</title>
+	<title>Shreeram Farms</title>
 	<!-- Importing stylesheet-->
 		<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script type="text/javascript" src="home.js"></script> 
 </head>
 <body>
-	<header onscroll="showheader()"  class="header1">
-		<h2>Farm2Home</h2>
-		<div class="menu">
-			<i class="material-icons">account_circle</i>
-		</div>
+	<header >
+		<nav class="menu">
+			 <ul  class="menuitems"  >
+    			<li><a  id='home' href="#" class="selected items" >Home</a></li>
+    			<li ><a id='about'href="#" class="selected">About</a></li>
+   				 <li><a id='contact' href="#" class="selected">Contact</a></li>
+  			</ul>
+		</nav>
 	</header>
 	<section class="banner">
-		<img src="media/wall1.jpg">
 		
 	</section>
-	<section class="container1">
-		<div>
-			<p>
-			vjfnvlksdvnd
-			gdff
-			gd
-			sf
-			gdf
-		
-		</p>
-		</div>
-		
-	</section>
-<script>
-	let scrollbefore=0;
-     header = document.getElementsByClassName('header1');
-	window.addEventListener('scroll',()=>{
-		const scrollable=document.documentElement.scrollHeight -window.innerHeight;
-		let currentpos=window.scrollY;
-				if (currentpos>scrollbefore)
-				{
-            	header[0].style.top="-80px";		
-				}
-				else{
-            	header[0].style.top="0";	
-				}
-		scrollbefore=currentpos;
-        
-		if (scrollable==currentpos) {
-			alert("you reached the bottom")
-		} 
-		
-	
-	});
-</script>
+
 	
 </body>
+<!-- <script type="text/javascript">
+	function selected() {
+		
+		
+	}
+</script> -->
 
 </html>
 
