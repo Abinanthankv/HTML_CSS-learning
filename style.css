@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
- background:black;
+
   color:white;
 }
 
@@ -17,6 +17,7 @@ header{
   width: 100%;
   right: 0;
   padding: 5px;
+  z-index: 1000;
 }
 header ul li a:hover,
 header ul li a.active:focus{
@@ -42,7 +43,31 @@ a{
   padding: 6px 15px;
 
 }
-
+section .banner{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  object-fit: cover;
+}
+section h2{
+  color: white;
+  font-size: 4em;
+  position: absolute;
+  z-index: 1000;
+}
+section img{
+  position: absolute;
+  top: 0;
+  margin: 0;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 
