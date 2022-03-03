@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
-
+/*Complete page*/
 *{
   margin: 0;
   padding: 0;
+  color: black;
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 
-  color:white;
 }
+/*-----------------------------------------------------------------------*/
+
 
 header{
-  position:absolute;
+  position:fixed;
   display: flex;
   justify-content: end;
   top: 0;
@@ -19,14 +21,13 @@ header{
   padding: 5px;
   z-index: 1000;
 }
-header ul li a:hover,
-header ul li a.active:focus{
-  border: 2px solid white;
+header ul li a:hover
+{
+  border: 2px solid black;
   border-radius: 20px;
-  background: white;
-  color: black;
+  background:black;
+  color:white;
 }
-
 .menuitems {
  display: flex;
  justify-content: space-between;
@@ -39,34 +40,44 @@ header ul li a.active:focus{
 }
 a{
   text-decoration: none; 
-  
   padding: 6px 15px;
+}
+
+section{
+  height: 100vh;
+}
+ section img{
+ margin: 0;
+
+ position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior:auto;
+}
+.container section img{
+  margin: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+#home{
+ 
 
 }
-section .banner{
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  top: 0;
-  object-fit: cover;
+#about{ 
+  
+
+
 }
-section h2{
-  color: white;
-  font-size: 4em;
-  position: absolute;
-  z-index: 1000;
-}
-section img{
-  position: absolute;
-  top: 0;
-  margin: 0;
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
+#contact{
+  
+ 
+  
 }
 
 
