@@ -20,6 +20,7 @@ header{
   right: 0;
   padding: 5px;
   z-index: 1000;
+  color: white;
 }
 header ul li a:hover
 {
@@ -31,46 +32,37 @@ header ul li a:hover
 .menuitems {
  display: flex;
  justify-content: space-between;
+   color: white;
  
 }
 .menuitems li{
   margin: 2px 30px;
+
   padding: 10px;
  list-style: none; 
 }
 a{
   text-decoration: none; 
   padding: 6px 15px;
-}
-
-section{
-  height: 100vh;
-}
- section img{
- margin: 0;
-
- position: absolute;
-  width: 100%;
-  height: 100vh;
+     color: white;
 }
 .container{
-  width: 100%;
-  overflow-y: scroll;
-  scroll-behavior:auto;
+  scroll-behavior: smooth;
 }
-.container section img{
-  margin: 0;
-  top: 0;
-  width: 100%;
+section{
+  scroll-behavior: smooth;
   height: 100vh;
-  position: absolute;
 }
-#home{
- 
 
+
+#home{
+background: black;
+color: white;
+}
+#home h2{
+  color: white;
 }
 #about{ 
-  
 
 
 }
