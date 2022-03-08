@@ -47,7 +47,6 @@ header ul li a:hover
  display: flex;
  justify-content: space-between;
    color: white;
- 
 }
 .menuitems li{
   margin: 2px 30px;
@@ -71,7 +70,6 @@ a{
   position: absolute;
    height: 100vh;
   width: 100%;
-
 }
 .slides img{
   height: 100vh;
@@ -97,7 +95,6 @@ a{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -107,14 +104,13 @@ a{
   background-color: rgba(0,0,0,0.8);
 }
 
-section{
-  scroll-behavior: smooth;
-  height: 100vh;
+ .container{
+  display: flex;
+  flex-direction:column; 
 }
 
-#home{
-
-
+#home,#destinations,#contact{
+min-height:100vh;
 }
 #home h2{
   color:white;
@@ -128,14 +124,19 @@ section{
 color: black;
 padding: 10px 20px;
 
+
+}
+#destinations{
+    
+ 
 }
 #contact{
-  
+   
  
   
 }
 .cards{
-  position: absolute;
+  position:relative;
   display: flex;
   flex-direction:row;
   justify-content:space-evenly;
@@ -166,7 +167,7 @@ padding: 10px 20px;
   background: white;
   transition: .5s ease;
 }
-.card:hover .overlay {
+.card:hover  .overlay {
   height: 30%;
 }
 .card-title{
@@ -179,7 +180,6 @@ padding: 10px 20px;
 .card-content{
    padding:4px 10px;
 }
-  
   
 
 
