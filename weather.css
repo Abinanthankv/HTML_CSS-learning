@@ -1,0 +1,25 @@
+body{
+color: black;
+}
+.weather{
+	background: black;
+	background-image:url( "media/chennai.jpg");
+	color: white;
+	height: 300px;
+	width: 400px;
+}
+.city{
+	position: relative;
+	padding: 5px 40px;
+	text-transform: capitalize;
+	margin: 0;
+}
+.desc-card{
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+}
+.current-date{
+	color: black;
+	z-index: 1000;
+}
