@@ -1,37 +1,72 @@
-body{
-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box; 
+  font-family: 'Poppins',sans-serif;
+
 }
+.search{
+	width:60%;
+}
+
 .weather{
-	background:pink;
-	border: 4px solid red;
+	position: absolute;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
 	height: auto;
-	width: 100%;
+	padding: 5px;
+	width:100%;
 }
 .city{
-	position: relative;
-	padding: 5px 40px;
-	text-transform: capitalize;
-	margin: 0;
-}
-.desc-card{
 	display: flex;
-	align-items: center;
 	text-transform: capitalize;
+	margin-bottom: 4px;
 }
+.temp{
+	
+	
+}
+
 .current-date{
-	color: black;
+	
 	z-index: 1000;
 }
 .icon{
-	height: 90px;
-	width: 70px;
-	padding: 5px;
+	height: 100px;
+	width:100px;
+	z-index: 1000;	
 }
 
-
 .dailycard{
-	text-transform: capitalize;
+	text-transform: capitalize;	
 	display: flex;
+}
+.days{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
 	align-items: center;
-	padding: 5px;
+	margin-left:20px;
+	background: #6F6967;
+	border-radius: 8px;
+  box-shadow: -4px 7px 5px 1px rgba(176,164,176,1);
+}
+.desc{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	padding: 8px;
+
+}
+.location{
+	display: flex;
+	padding: 4px;
+}
+.country{
+	padding-left: 10px;
 }
