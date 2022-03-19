@@ -6,72 +6,143 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Weather</title>
 	<link rel="stylesheet" type="text/css" href="weather.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script type="text/javascript" src="weather.js"></script>
 	
 </head>
 <body>
 	<div class="weather">
 		<img class="weather_background" src="">
-		<div>
-			<input type="text"  id="search">
-			<button type="button" class="searchbtn" onclick="searchcity()">Search</button>
+		<div class="searchbar">
+			<input type="text"  id="search" class="search">
+			<button type="button" class="searchbtn" onclick="searchcity()"><i class="material-icons md-60">travel_explore</i></button>
+
 		</div>
+		<div class="current_data">
+			
 		
 		<div class="location">
 		<h2 class="city">weather in TN </h2>
 		<h2 class="country"> In</h2>	
-		
+
 		</div>
 		<h2 id="currentdate">Date</h2>
 		<h1 id="current_temp" class="temp">51 &#176 C </h1>
-		<img src="" alt="" class="icon ">
+		<img src="" alt="" class="icon1">
 		<div class="description">Cloudy</div>
 		
 		<div class="humidity"></div>
-		<br>	
+		<br>
+		</div>	
 		<div class="dailycard">
 			
 		
 		<div class="day1 days">
-			<div id="date1" class="date">Date</div>
-			<img src="" alt="" id="day1" class="icon">
-			<div id="desc1" class="desc">Cloudy</div>
+			<div class="date">Date</div>
+			<img src="" alt=""  class="icon">
+			<div  class="desc">Cloudy</div>
+			<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
+			
+			
+			
 			
 		</div>
 		<div class="day2 days">
-			<div id="date2" class="date">Date</div>
-			<img src="" alt="" id="day2" class="icon">
-			<div id="desc2"class="desc">Cloudy</div>
+			<div  class="date">Date</div>
+			<img src="" alt=""  id="day2"class="icon">
+			<div class="desc">Cloudy</div>
+			<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		<div class="day3 days">
-			<div id="date3" class="date">Date</div>
+			<div  class="date">Date</div>
 			<img src="" alt="" id="day3" class="icon">
-			<div id="desc3"class="desc">Cloudy</div>
+			<div class="desc">Cloudy</div>
+			<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		<div class="day4 days">
-			<div id="date4" class="date">Date</div>
+			<div  class="date">Date</div>
 			<img src="" alt="" id="day4" class="icon">
-			<div id="desc4"class="desc">Cloudy</div>
+			<div class="desc">Cloudy</div>
+		<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		<div class="day5 days">
-			<div id="date5" class="date">Date</div>
+			<div  class="date">Date</div>
 			<img src="" alt="" id="day5" class="icon">
-			<div id="desc5"class="desc">Cloudy</div>
+			<div class="desc">Cloudy</div>
+		<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		<div class="day6 days">
-			<div id="date6" class="date">Date</div>
+			<div class="date">Date</div>
 			<img src="" alt="" id="day6" class="icon">
-			<div id="desc6"class="desc">Cloudy</div>
+			<div class="desc">Cloudy</div>
+			<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		<div class="day7 days">
-			<div id="date7" class="date">Date</div>
+			<div  class="date">Date</div>
 			<img src="" alt="" id="day7" class="icon">
-			<div id="desc7"class="desc">Cloudy</div>
+			<div class="desc">Cloudy</div>
+		<div class="daily_tempmax">
+			<div class="temp_max"></div>
+				<img id="temp_max"src="/icons/thermometer.svg">
+			
+			</div>
+			<div class="daily_tempmin">
+				<div class="temp_min">Min</div>	
+				<img id="temp_max"src="/icons/thermometer.svg">
+			</div>
 			
 		</div>
 		</div>

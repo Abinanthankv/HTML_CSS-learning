@@ -6,9 +6,12 @@ let name;
 let description;
 let daily_description=[];
 let daily_icon=[];
+let temp_min=[];
+let temp_max=[];
 let current_temp;
 let country;
 let icon;
+let src=[];
 let humidity;
 let current_date;
 let city="Harur";
@@ -18,14 +21,7 @@ fetchcity(city);
 function searchcity(){
 
 	city=document.getElementById("search").value;
-	console.log(city);
-	if(city=="null")
-	{
-		alert("Please center city name")
-	}
-	else{
-		fetchcity(city);
-	}
+	fetchcity(city);
 }
 
 
@@ -42,7 +38,6 @@ function searchcity(){
   	lon=data.coord.lon;
   	icon =data.weather[0].icon;
   	country=data.sys.country;
-  	console.log(data,country);
   	name=data.name
   	fetchWeather(lat,lon);
   }
@@ -61,52 +56,69 @@ function displayWeather(data){
   		current_temp=data.current.temp;
   		humidity=data.current.humidity;
   		let dailydata=data.daily;
-  		console.log(data)
+  		
+  		
   		for (let i=0;i<=dailydata.length-1;i++)
   		{
   			daily_description[i]=dailydata[i].weather[0].description;
   			daily_icon[i]=dailydata[i].weather[0].icon
   			date[i]=new Date(dailydata[i].dt*1000);	
+  			temp_max[i]=dailydata[i].temp.max;
+  			temp_min[i]=dailydata[i].temp.min;
+
   		}
-  		current_date=new Date();
+  		console.log(temp_min,temp_max)
+  		current_date=date[0];
   		let date1=current_date.getDate();
   		let month=current_date.getMonth()+1;
   		let year=current_date.getFullYear();
-  		console.log(date1,month)
-  		document.querySelector("#currentdate").innerText=date1+"/"+month+"/"+year;
-  		document.querySelector("#date1").innerText=weekday[date[1].getDay()];
-  		document.querySelector("#date2").innerText=weekday[date[2].getDay()];
-  		document.querySelector("#date3").innerText=weekday[date[3].getDay()];
-  		document.querySelector("#date4").innerText=weekday[date[4].getDay()];
-  		document.querySelector("#date5").innerText=weekday[date[5].getDay()];
-  		document.querySelector("#date6").innerText=weekday[date[6].getDay()];
-  		document.querySelector("#date7").innerText=weekday[date[7].getDay()];
-  		document.querySelector(".icon").src="https://openweathermap.org/img/wn/"+icon+".png";
+  		
+  		/*----------------------------------------------------------------------------------------*/
+  			/*To display cuurent wether condition*/
+  		/*------------------------------------------------------------------------------------------*/
+
+  		document.querySelector(".icon1").src="https://openweathermap.org/img/wn/"+icon+".png";
 		document.querySelector(".city").innerText=name +",";
 		document.querySelector(".country").innerText=country;
 		document.querySelector(".description").innerText=description;
+		document.querySelector("#currentdate").innerText=date1+"/"+month+"/"+year;
 		document.querySelector("#current_temp").innerText=Math.ceil(current_temp)+"\xB0 C";
 		document.querySelector(".humidity").innerText="Humidity:"+humidity+"%";	
-		document.querySelector("#day1").src="https://openweathermap.org/img/wn/"+daily_icon[1]+".png";
-		document.querySelector("#desc1").innerText=daily_description[1];
-		document.querySelector("#day2").src="https://openweathermap.org/img/wn/"+daily_icon[2]+".png";
-		document.querySelector("#desc2").innerText=daily_description[2];
-		document.querySelector("#day3").src="https://openweathermap.org/img/wn/"+daily_icon[3]+".png";
-		document.querySelector("#desc3").innerText=daily_description[3];
-		document.querySelector("#day4").src="https://openweathermap.org/img/wn/"+daily_icon[4]+".png";
-		document.querySelector("#desc4").innerText=daily_description[4];
-		document.querySelector("#day5").src="https://openweathermap.org/img/wn/"+daily_icon[5]+".png";
-		document.querySelector("#desc5").innerText=daily_description[5];
-		document.querySelector("#day6").src="https://openweathermap.org/img/wn/"+daily_icon[6]+".png";
-		document.querySelector("#desc6").innerText=daily_description[6];
-		document.querySelector("#day7").src="https://openweathermap.org/img/wn/"+daily_icon[7]+".png";
-		document.querySelector("#desc7").innerText=daily_description[7];
-		
-		console.log(daily_description,date)
-		
-		
-		
-		
+		/*----------------------------------------------------------------------------------*/
+
+		/*-------------------------------------------------------------------------------------*/
+			/*To display daily forecase data for 7 days*/
+		/*--------------------------------------------------------------------------------------*/
+		var days=document.querySelectorAll(".days");
+		var classes=document.querySelectorAll(".icon");
+		var dates=document.querySelectorAll(".date");
+		var desc=document.querySelectorAll(".desc");
+		var dailytemp_max=document.querySelectorAll(".temp_max");
+		var dailytemp_min=document.querySelectorAll(".temp_min");
+		for (let i=0;i<=days.length-1;i++)
+		{
+			let imageicons=(classes[i]);
+			let setdate=dates[i];
+			let setdesc=desc[i];
+			let settemp_max=dailytemp_max[i];
+			let settemp_min=dailytemp_min[i];
+
+  			/*imageicons.src="icons/"+daily_description[i]+".svg";*/	
+  			imageicons.src="https://openweathermap.org/img/wn/"+daily_icon[i+1]+".png"
+  			setdate.innerText=weekday[date[i+1].getDay()]
+  			setdesc.innerText=daily_description[i+1];
+  			settemp_min.innerText=Math.ceil(temp_min[i+1])+"\xB0C"
+  			settemp_max.innerText=Math.ceil(temp_max[i+1])+"\xB0C"
+  			
+		}
+
+		/*-----------------------------------------------------------------------------------*/
+
+  				
+  		
+  		
+  		
+
 }
 
    
