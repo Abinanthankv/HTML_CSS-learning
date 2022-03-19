@@ -11,7 +11,10 @@ let temp_max=[];
 let current_temp;
 let country;
 let icon;
+let icons=[];
 let src=[];
+let condition=[];
+let intensity=[];
 let humidity;
 let current_date;
 let city="Harur";
@@ -56,7 +59,7 @@ function displayWeather(data){
   		current_temp=data.current.temp;
   		humidity=data.current.humidity;
   		let dailydata=data.daily;
-  		
+  		console.log(data)
   		
   		for (let i=0;i<=dailydata.length-1;i++)
   		{
@@ -67,7 +70,7 @@ function displayWeather(data){
   			temp_min[i]=dailydata[i].temp.min;
 
   		}
-  		console.log(temp_min,temp_max)
+  		
   		current_date=date[0];
   		let date1=current_date.getDate();
   		let month=current_date.getMonth()+1;
@@ -100,17 +103,57 @@ function displayWeather(data){
 			let imageicons=(classes[i]);
 			let setdate=dates[i];
 			let setdesc=desc[i];
+			
 			let settemp_max=dailytemp_max[i];
 			let settemp_min=dailytemp_min[i];
+			intensity[i]=daily_description[i+1].split(" ")[0];
+			condition[i]=daily_description[i+1].split(" ")[1];
+			imageicons.src="icons/"+intensity[i]+" "+condition[i]+".svg";
+			if(condition[i]=="rain")
+			{
+				
+				imageicons.src="icons/rain.svg";
+			}
+			if(condition[i]=="clouds")
+			{
 
-  			/*imageicons.src="icons/"+daily_description[i]+".svg";*/	
-  			imageicons.src="https://openweathermap.org/img/wn/"+daily_icon[i+1]+".png"
+				imageicons.src="icons/overcast clouds.svg";
+				
+			}
+			if(condition[i]=="snow")
+			{
+
+				imageicons.src="icons/snow.svg";
+			}
+			if(condition[i]=="hail")
+			{
+
+				imageicons.src="icons/hail.svg";
+			}
+			if(condition[i]=="haze")
+			{
+
+				imageicons.src="icons/haze.svg";
+			}
+  			
+  			
+  			
+  			
+  			
+  			console.log(intensity);
   			setdate.innerText=weekday[date[i+1].getDay()]
   			setdesc.innerText=daily_description[i+1];
   			settemp_min.innerText=Math.ceil(temp_min[i+1])+"\xB0C"
   			settemp_max.innerText=Math.ceil(temp_max[i+1])+"\xB0C"
   			
+				/*imageicons.src="https://openweathermap.org/img/wn/"+daily_icon[i+1]+".png";
+
+			*/
+
 		}
+  			
+		}
+		
 
 		/*-----------------------------------------------------------------------------------*/
 
@@ -119,7 +162,7 @@ function displayWeather(data){
   		
   		
 
-}
+
 
    
 
