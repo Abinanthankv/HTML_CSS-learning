@@ -10,6 +10,7 @@ let current_temp;
 let country;
 let icon;
 let humidity;
+let current_date;
 let city="Harur";
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 fetchcity(city);
@@ -58,7 +59,6 @@ function displayWeather(data){
 		
 		description=data.current.weather[0].description;
   		current_temp=data.current.temp;
-
   		humidity=data.current.humidity;
   		let dailydata=data.daily;
   		console.log(data)
@@ -68,6 +68,12 @@ function displayWeather(data){
   			daily_icon[i]=dailydata[i].weather[0].icon
   			date[i]=new Date(dailydata[i].dt*1000);	
   		}
+  		current_date=new Date();
+  		let date1=current_date.getDate();
+  		let month=current_date.getMonth()+1;
+  		let year=current_date.getFullYear();
+  		console.log(date1,month)
+  		document.querySelector("#currentdate").innerText=date1+"/"+month+"/"+year;
   		document.querySelector("#date1").innerText=weekday[date[1].getDay()];
   		document.querySelector("#date2").innerText=weekday[date[2].getDay()];
   		document.querySelector("#date3").innerText=weekday[date[3].getDay()];

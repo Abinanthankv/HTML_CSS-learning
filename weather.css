@@ -8,7 +8,7 @@
 
 }
 .search{
-	width:60%;
+	width:auto;
 }
 
 .weather{
@@ -60,8 +60,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
-	padding: 8px;
+	padding: 10px;
 
+}
+.date{
+	padding: 10px;
 }
 .location{
 	display: flex;
