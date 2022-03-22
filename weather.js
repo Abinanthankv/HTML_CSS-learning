@@ -12,7 +12,7 @@ let current_temp;
 let country;
 let icon;
 let icons=[];
-let src=[];
+let src;
 let condition=[];
 let intensity=[];
 let humidity;
@@ -79,8 +79,49 @@ function displayWeather(data){
   		/*----------------------------------------------------------------------------------------*/
   			/*To display cuurent weather condition*/
   		/*------------------------------------------------------------------------------------------*/
+if(description.includes("clouds"))
+			{
+				
+				document.querySelector(".icon1").src="icons/overcast clouds.svg";
+			}
+			if(description.includes("rain"))
+			{
+			
+				document.querySelector(".icon1").src="icons/rain.svg";
+			}
+			if(description.includes("snow"))
+			{
+			document.querySelector(".icon1").src="icons/snow.svg";
+			}
+			if(description.includes("hail"))
+			{
+				document.querySelector(".icon1").src="icons/hail.svg";
+			}
+			if(description.includes("haze"))
+			{
+				document.querySelector(".icon1").src="icons/haze.svg";
+			}
+				if(description.includes("clear"))
+			{
+				document.querySelector(".icon1").src="icons/clear sky.svg";
+			}
+				if(description.includes("smoke"))
+			{
+				document.querySelector(".icon1").src="icons/smoke.svg";
+			}
+				if(description.includes("fog"))
+			{
+				document.querySelector(".icon1").src="icons/fog.svg";
+			}
+				if(description.includes("thunderstorms"))
+			{
+				document.querySelector(".icon1").src="icons/thunderstorms.svg";
+			}
 
-  		document.querySelector(".icon1").src="https://openweathermap.org/img/wn/"+icon+".png";
+
+  	
+  	/*document.querySelector(".icon1").src="https://openweathermap.org/img/wn/"+icon+".png";*/
+  		
 		document.querySelector(".city").innerText=name +",";
 		document.querySelector(".country").innerText=country;
 		document.querySelector(".description").innerText=description;
@@ -106,35 +147,49 @@ function displayWeather(data){
 			
 			let settemp_max=dailytemp_max[i];
 			let settemp_min=dailytemp_min[i];
-			intensity[i]=daily_description[i+1].split(" ")[0];
-			condition[i]=daily_description[i+1].split(" ")[1];
-			imageicons.src="icons/"+intensity[i]+" "+condition[i]+".svg";
-			if(condition[i]=="rain" ||intensity[i]=="rain")
+			if(daily_description[i+1].includes("clouds"))
 			{
 				
+				imageicons.src="icons/overcast clouds.svg";
+			}
+			if(daily_description[i+1].includes("rain"))
+			{
+			
 				imageicons.src="icons/rain.svg";
 			}
-			if(condition[i]=="clouds" ||intensity[i]=="clouds")
+			if(daily_description[i+1].includes("snow"))
 			{
-
-				imageicons.src="icons/overcast clouds.svg";
-				
-			}
-			if(condition[i]=="snow"||intensity[i]=="snow")
-			{
-
 				imageicons.src="icons/snow.svg";
 			}
-			if(condition[i]=="hail"||intensity[i]=="hail")
+			if(daily_description[i+1].includes("hail"))
 			{
-
 				imageicons.src="icons/hail.svg";
 			}
-			if(condition[i]=="haze"||intensity[i]=="haze")
+			if(daily_description[i+1].includes("haze"))
 			{
-
 				imageicons.src="icons/haze.svg";
 			}
+				if(daily_description[i+1].includes("clear"))
+			{
+				imageicons.src="icons/clear sky.svg";
+			}
+				if(daily_description[i+1].includes("smoke"))
+			{
+				imageicons.src="icons/smoke.svg";
+			}
+				if(daily_description[i+1].includes("fog"))
+			{
+				imageicons.src="icons/fog.svg";
+			}
+				if(daily_description[i+1].includes("thunderstorms"))
+			{
+				imageicons.src="icons/thunderstorms.svg";
+			}
+
+
+
+			
+			
   			
   			setdate.innerText=weekday[date[i+1].getDay()]
   			setdesc.innerText=daily_description[i+1];
