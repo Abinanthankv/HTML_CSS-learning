@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: white;
+
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 
@@ -40,7 +40,7 @@
 	position: absolute;
 	display: flex;
 	flex-direction:row;
-color: black;
+
 	margin:0;
 	padding: 4px;
 	width: 100%vw;
@@ -55,19 +55,19 @@ color: black;
 	
 }
 .current_data{
-	color: black;
+		color: black;
 		text-transform: capitalize;
 		margin-left: 20px;
 		padding: 3px;
 		height :auto;
 		width: 200px;
-		color: black;
+		
 		background: #E5F44F;
 
 }
 
 #currentdate{
-	color: black;
+	
 	font-size:16px;
 	font-style: italic;
 }
@@ -91,7 +91,7 @@ color: black;
 	
 }
 .days{
-	color: white !important;
+	
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
@@ -105,6 +105,7 @@ color: black;
   box-shadow: -4px 7px 5px 1px rgba(176,164,176,1);
 }
 .desc{
+	
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
@@ -112,6 +113,7 @@ color: black;
 
 }
 .date{
+
 	padding: 10px;
 }
 .location{
