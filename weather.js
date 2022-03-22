@@ -77,7 +77,7 @@ function displayWeather(data){
   		let year=current_date.getFullYear();
   		
   		/*----------------------------------------------------------------------------------------*/
-  			/*To display cuurent wether condition*/
+  			/*To display cuurent weather condition*/
   		/*------------------------------------------------------------------------------------------*/
 
   		document.querySelector(".icon1").src="https://openweathermap.org/img/wn/"+icon+".png";
@@ -109,38 +109,33 @@ function displayWeather(data){
 			intensity[i]=daily_description[i+1].split(" ")[0];
 			condition[i]=daily_description[i+1].split(" ")[1];
 			imageicons.src="icons/"+intensity[i]+" "+condition[i]+".svg";
-			if(condition[i]=="rain")
+			if(condition[i]=="rain" ||intensity[i]=="rain")
 			{
 				
 				imageicons.src="icons/rain.svg";
 			}
-			if(condition[i]=="clouds")
+			if(condition[i]=="clouds" ||intensity[i]=="clouds")
 			{
 
 				imageicons.src="icons/overcast clouds.svg";
 				
 			}
-			if(condition[i]=="snow")
+			if(condition[i]=="snow"||intensity[i]=="snow")
 			{
 
 				imageicons.src="icons/snow.svg";
 			}
-			if(condition[i]=="hail")
+			if(condition[i]=="hail"||intensity[i]=="hail")
 			{
 
 				imageicons.src="icons/hail.svg";
 			}
-			if(condition[i]=="haze")
+			if(condition[i]=="haze"||intensity[i]=="haze")
 			{
 
 				imageicons.src="icons/haze.svg";
 			}
   			
-  			
-  			
-  			
-  			
-  			console.log(intensity);
   			setdate.innerText=weekday[date[i+1].getDay()]
   			setdesc.innerText=daily_description[i+1];
   			settemp_min.innerText=Math.ceil(temp_min[i+1])+"\xB0C"

@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: black;
+  
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 
@@ -39,11 +39,14 @@
 .weather{
 	position: absolute;
 	display: flex;
-	flex-direction:column;
-	height:100%vh;
+	flex-direction:row;
 	margin:0;
-	width:100%vw;
-	background:grey;
+	padding: 4px;
+	
+	
+	
+
+
 }
 .city{
 	display: flex;
@@ -51,9 +54,12 @@
 	
 }
 .current_data{
-		padding: 20px;
 		text-transform: capitalize;
-		background: grey;
+		margin-left: 20px;
+		padding: 3px;
+		height :300px;
+		width: 200px;
+		background: #E5F44F;
 
 }
 
@@ -65,8 +71,6 @@
 .icon {
 	height: 100px;
 	width:100px;
-	z-index: 1000;	
-
 }
 .icon1{
 		height: 100px;
@@ -74,12 +78,14 @@
 	z-index: 1000;
 }
 .dailycard{
+
 	text-transform: capitalize;	
 	display: flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+	height:300px;
+
 	
-	justify-content: space-between;
-	height: auto;
-	align-items: center;
 }
 .days{
 	color: white;
@@ -87,9 +93,11 @@
 	flex-direction:column;
 	justify-content: center;
 	align-items: center;
-	margin-left:25px;
+	margin-left:20px;
 	height:auto;
-	background: #E5F44F;
+	
+	background: black;
+	color: white;
 	border-radius: 8px;
   box-shadow: -4px 7px 5px 1px rgba(176,164,176,1);
 }
@@ -112,7 +120,7 @@
 }
 .daily_tempmax,.daily_tempmin{
 	display: flex;
-	flex-direction:row;
+	
 	align-items: center;
 	
 }
