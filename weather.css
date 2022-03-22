@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  
+  color: white;
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 
@@ -40,7 +40,7 @@
 	position: absolute;
 	display: flex;
 	flex-direction:row;
-	
+
 	margin:0;
 	padding: 4px;
 	width: 100%vw;
@@ -90,7 +90,7 @@
 	
 }
 .days{
-	color: white;
+	color: white !important;
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
