@@ -17,6 +17,7 @@
 }
 .searchbar{
 	width: 100%;
+	color: black;
 	padding:  5px 10px;
 	display: flex;
 	flex-direction:row;
