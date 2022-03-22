@@ -116,6 +116,7 @@ a{
 
 #home,#destinations,#contact{
 min-height:100vh;
+min-width: 100vw;
 scroll-behavior: smooth;
 }
 #home h2{
@@ -137,8 +138,8 @@ padding: 10px 20px;
  
 }
 #contact{
-  background: grey;
   
+  width:auto;
  color: white;
  
   
