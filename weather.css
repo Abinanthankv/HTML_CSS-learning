@@ -40,9 +40,10 @@
 	position: absolute;
 	display: flex;
 	flex-direction:row;
+	
 	margin:0;
 	padding: 4px;
-	
+	width: 100%vw;
 	
 	
 
@@ -54,6 +55,7 @@
 	
 }
 .current_data{
+	color: black;
 		text-transform: capitalize;
 		margin-left: 20px;
 		padding: 3px;

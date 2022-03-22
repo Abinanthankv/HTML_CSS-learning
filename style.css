@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500;1,600&display=swap');
 /*Complete page*/
+
 *{
   margin: 0;
   padding: 0;
-  color: black;
+ 
   box-sizing: border-box; 
   font-family: 'Poppins',sans-serif;
 
@@ -11,18 +12,20 @@
 /*-----------------------------------------------------------------------*/
 
 body{
-  overflow-y: scroll;
+  overflow-y:auto;overflow-x: auto;
+
+ 
 
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-    display: none;
+    display:block;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body{
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width:auto;  /* Firefox */
 }
 header{
   position:absolute;
@@ -107,10 +110,13 @@ a{
  .container{
   display: flex;
   flex-direction:column; 
+
+  scroll-behavior: smooth;
 }
 
 #home,#destinations,#contact{
 min-height:100vh;
+scroll-behavior: smooth;
 }
 #home h2{
   color:white;
@@ -127,11 +133,13 @@ padding: 10px 20px;
 
 }
 #destinations{
-    
+    margin-top: 50px;
  
 }
 #contact{
-   
+  background: grey;
+  height: ;
+ color: white;
  
   
 }
