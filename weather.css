@@ -40,7 +40,7 @@
 	position: absolute;
 	display: flex;
 	flex-direction:row;
-
+color: black;
 	margin:0;
 	padding: 4px;
 	width: 100%vw;
@@ -61,6 +61,7 @@
 		padding: 3px;
 		height :auto;
 		width: 200px;
+		color: black;
 		background: #E5F44F;
 
 }
